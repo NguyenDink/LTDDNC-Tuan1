@@ -9,9 +9,9 @@ function HomeScreen({ navigation }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       navigation.navigate('HelloScreen');
-    }, 10000); // 10 seconds
+    }, 10000); 
 
-    return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    return () => clearTimeout(timer); 
   }, [navigation]);
 
   return (
